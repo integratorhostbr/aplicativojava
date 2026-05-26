@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="pt-br" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title th:text="${titulo} + ' - ' + ${empresa}">Aplicativo de Exemplo - Integrator Host</title>
+    <link rel="stylesheet" th:href="@{/css/style.css}">
+</head>
+<body>
+
+<main class="container">
+    <section class="card">
+        <div class="badge">Spring Boot 4 + Thymeleaf</div>
+
+        <h1 th:text="${titulo}">Aplicativo de Exemplo</h1>
+        <h2 th:text="${empresa}">Integrator Host</h2>
+
+        <p th:text="${mensagem}">
+            Aplicação Java com Spring Boot 4 e Thymeleaf funcionando com sucesso.
+        </p>
+
+        <div class="info">
+            <strong>Data/Hora:</strong>
+            <span th:text="${dataHora}">00/00/0000 00:00:00</span>
+        </div>
+
+        <a class="button" href="/api/status" target="_blank">
+            Ver status da API
+        </a>
+    </section>
+</main>
+
+</body>
+</html>
