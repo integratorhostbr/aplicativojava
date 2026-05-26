@@ -18,5 +18,6 @@ public class HomeController {
         model.addAttribute("dataHora", LocalDateTime.now().format(DateTimeFormatter.ofPattern("dd/MM/yyyy HH:mm:ss")));
 
         return "index";
+
     }
 }
