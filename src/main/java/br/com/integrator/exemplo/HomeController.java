@@ -12,7 +12,7 @@ public class HomeController {
 
     @GetMapping("/")
     public String home(Model model) {
-        model.addAttribute("titulo", "Exemplo Java com GiTHUB 5");
+        model.addAttribute("titulo", "Exemplo Java com GiTHUB 7");
         model.addAttribute("empresa", "Integrator Host do Brasil");
         model.addAttribute("mensagem", "Aplicação Java com Spring Boot 4 e Thymeleaf funcionando com sucesso.");
         model.addAttribute("dataHora", LocalDateTime.now().format(DateTimeFormatter.ofPattern("dd/MM/yyyy HH:mm:ss")));
