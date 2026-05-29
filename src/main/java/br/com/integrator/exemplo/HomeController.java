@@ -11,7 +11,7 @@ import java.time.format.DateTimeFormatter;
 public class HomeController {
 
     @GetMapping("/")
-    public String home(Model model) {
+    public String home(Model models) {
         model.addAttribute("titulo", "Exemplo Java com GiTHUB versão bom aviso de email");
         model.addAttribute("empresa", "Integrator Host do Brasil");
         model.addAttribute("mensagem", "Aplicação Java com Spring Boot 4 e Thymeleaf funcionando com sucesso.");
